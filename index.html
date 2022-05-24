@@ -1,12 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my new website</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS file/sidehustlep3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Hello world</h1>
-</body>
-</html>
+    <div class="container">
+        <div class="row box">
+            <div class="col-md-4">
+              <form action="">
+                  <div class="form-item">
+                      <input type="text" class="form-control form-control-lg" placeholder="Username">
+                  </div>
+                  <div class="form-item">
+                      <input type="Email" class="form-control form-control-lg" placeholder="Email">
+                  </div>
+                  <div class="form-item">
+                      <input type="Phone" class="form-control form-control-lg" placeholder="Phone Number">
+                  </div>
+              </form>
+                  <div class="form-item">
+                      <input type="Password" id="password" class="form-control form-control-lg" placeholder="Password">
+                      <i class="fa fa-eye" id="eye"></i>
+                  <div class="form-item">
+                      <input type="Password" id="password2" class="form-control form-control-lg" placeholder="Confirm Password">
+                      <i class="fa fa-eye" id="eye2"></i>
+                  </div>
+                  <div class="form-item">
+                    <input type="Gender" class="form-control form-control-lg" placeholder="Gender">
+                </div>
+                  <div class="d-grid">
+                <button class="btn-primary btn-lg">
+                    Submit
+                    </button>
+                      </div>
+                     </form>
+                       </div>
+
+                      </div>
+
+                       </div>
+
+                 </div>
+
+
+
+
+
+                 <script>
+                     const myPassword = document.querySelector('#password');
+const eyeIcon = document.querySelector('#eye');
+const myPassword2 = document.querySelector('#password2');
+const eyeIcon2 = document.querySelector('#eye2');
+
+eyeIcon.addEventListener('click', () => {
+  if(eyeIcon.classList.contains('fa-eye')) {
+      myPassword.setAttribute('type', 'text');
+      eyeIcon.classList.replace('fa-eye', 'fa-eye-slash');
+     // eyeIcon.classList.remove('fa-eye');
+      //eyeIcon.classList.add('fa-eye-slash');
+    
+  } else { 
+    myPassword.setAttribute('type', 'password');
+    eyeIcon.classList.replace('fa-eye-slash', 'fa-eye');
+  }
+
+})
+
+
+
+eyeIcon2.addEventListener('click', () => {
+  if(eyeIcon2.classList.contains('fa-eye')) {
+      myPassword2.setAttribute('type', 'text');
+      eyeIcon2.classList.replace('fa-eye', 'fa-eye-slash');
+     // eyeIcon.classList.remove('fa-eye');
+      //eyeIcon.classList.add('fa-eye-slash');
+    
+  } else { 
+    myPassword2.setAttribute('type', 'password');
+    eyeIcon2.classList.replace('fa-eye-slash', 'fa-eye');
+  }
+
+})
+
+
+                 </script>
+                   </body>
+
+                   
+             </html>
